@@ -1,0 +1,22 @@
+<html ng-app="myapp">
+    <head>
+        <title>Angularjs</title>
+        <link rel="stylesheet" href="styles.css" type="text/css">
+    </head>
+    <body>
+        <div ng-controller="CartsController">
+            <div ng-repeat="item in items">
+                <span{{item.title}}></span>
+                <input ng-model="item.quantity">
+                <span>{{item.price | currency}}</span>
+                <span>{{item.price * item.quantity | currency}}</span>
+            </div>
+            <div>Total: {{pass.total | currency}}</div>
+            <div>discount: {{pass.discount | currency}}</div>
+            <div>Subtotal: {{pass.subtotal | currency}}</div> 
+        </div> 
+    </body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.js"></script>
+    <script src="app.js"></script>
+    <script src="itemService.js"></script>
+</html>

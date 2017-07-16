@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Githubp</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  </head>
+  <body ng-app="guthub">
+    <header>
+      <h1>Guthub</h1>  
+    </header>
+
+    <div butterbar>Loading...</div>
+    <div class="container-fluid">
+      <div class="row-fluid">
+        <div class="span2">
+          <div id="focus"><a href="/#/new">New Recipe</a></div>
+          <div><a href="/#/">Recipe list</a></div>
+        </div>
+        <div class="span10">
+          <div ng-view>          
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.28/angular.min.js"></script>
+	  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.28//angular-route.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-resource/1.2.28/angular-resource.js"></script>
+    <script src="scripts/directives/directives.js"></script>
+    <script src="scripts/services/services.js"></script>
+    <script src="scripts/controllers/controllers.js"></script>  
+  </body>
+</html>
